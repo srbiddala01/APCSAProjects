@@ -6,6 +6,6 @@ public class Project3 {
         System.out.println("Enter number of Kilometers: ");
         int x = reader.nextInt();
         int y = ((x * 60 * 90)/10000);
-        System.out.println("# of nautical miles: " + y);
+        System.out.println("# of Nautical Miles: " + y);
     }
 }
