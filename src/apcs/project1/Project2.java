@@ -11,7 +11,7 @@ public class Project2 {
      System.out.println("   *                   * ");
      System.out.println("    *                 *");
      System.out.println("     *               *");
-     System.out.println("      *  Y I E L D  *");
+     System.out.println("      *  Y I  E L D *");
      System.out.println("       *           *");
      System.out.println("        *         *");
      System.out.println("         *       *");
