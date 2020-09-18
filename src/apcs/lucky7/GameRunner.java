@@ -8,19 +8,20 @@ public class GameRunner {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         String start;
-        System.out.println(" Welcome to Shriya Biddala's Gambling Game! \n Enter 'Start' to Play:");
+        System.out.print("Welcome to Shriya Biddala's Gambling Game! \nWARNING! You are going to be SUPER RICH after this game! \n Enter 'Start' to Play: ");
         start = reader.next();
-
-        do {
+        if (start.equals("Start")){
+            String res = "none";
+            do {
             reader = new Scanner(System.in);
             int balance;
-            System.out.print("Enter the amount of money you're willing to gamble: $");
+            System.out.print(" Enter the amount of money you're willing to gamble: $");
             balance = reader.nextInt();
 
-            if (balance > 20) {
+               if (balance > 20) {
                 reader = new Scanner(System.in);
                 int lucky;
-                System.out.print("Enter your lucky number: ");
+                System.out.print(" Enter your lucky number: ");
                 lucky = reader.nextInt();
 
                 int rolls = 0;
@@ -50,43 +51,17 @@ public class GameRunner {
                     }
                 }
                 System.out.println("You are broke after " + rolls + " rolls.");
-                System.out.println("You should have stopped at " + roll + " when you had $" + max);
+                System.out.println("You should have stopped at " + roll + " rolls " + "when you had $" + max);
+                System.out.print("You want to play again? ");
 
                 reader = new Scanner(System.in);
-                String res;
-                do {
-                    System.out.print("You want to play again? ");
-                    res = reader.next();
+                res = reader.next();
 
-                    reader = new Scanner(System.in);
-                    System.out.print("Enter the amount of money you're willing to gamble: $");
-                    balance = reader.nextInt();
-
-                    while (balance > 0) {
-                        rolls++;
-                        int dice1 = (int) (Math.random() * 6 + 1);
-                        int dice2 = (int) (Math.random() * 6 + 1);
-                        int total = dice1 + dice2;
-
-                        if (total == lucky) {
-                            balance = balance + 4;
-                            System.out.println("Roll #" + rolls + ": " + dice1 + ", " + dice2 + "   Total: " + lucky + " WIN!     " + "Starting Balance: $" + balance);
-                        } else if (total > 0) {
-                            balance = balance - 1;
-                            System.out.println("Roll #" + rolls + ": " + dice1 + ", " + dice2 + "   Total: " + total + " LOSE!    " + "Starting Balance: $" + balance);
-                        }
-
-                        if (balance > max) {
-                            max = balance;
-                            roll = rolls;
-                        }
-                    }
-                    System.out.println("You are broke after " + rolls + " rolls.");
-                    System.out.println("You should have stopped at " + roll + " when you had $" + max);
-                } while (res.equals("Yes"));
 
             }
-        } while (start.equals("Start"));
+            } while (res.equals("Yes")) ;
+
+        }
     }
 
-    }
+}
