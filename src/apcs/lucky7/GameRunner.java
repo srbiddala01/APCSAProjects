@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 
 public class GameRunner {
-    /* I completed an extension: I asked what the user's lucky number was and used their lucky numbers as the "Magic Sum" that the dice need to add up to in order to win, and I also set a minimum limit on the number of dollars the user can input so I can make more money.*/
+    /* I completed an extension: I asked what the user's lucky number was and used their lucky numbers as the "Magic Sum" that the dice need to add up to in order to win, and I also set a minimum limit on the number of dollars the user can input so I can make more money.
+    * I demonstrated mastery because I used more than 1 do-while loops and I used my creativity when asking users to input their lucky number, to make my program more unique.*/
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         String start;
