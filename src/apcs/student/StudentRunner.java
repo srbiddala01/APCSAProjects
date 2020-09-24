@@ -39,7 +39,7 @@ public class StudentRunner {
 
         System.out.println ();
 
-        System.out.println("Building Student 3 (with same id as Student 1)");
+        System.out.println("Building Student 3 (with same ID as Student 1)");
         Student s3 = new Student ("Herman Johnson", 123456, 98.0, 96.0);
         System.out.println (s3);
         System.out.println ("Average score: " + s3.getAverage());
