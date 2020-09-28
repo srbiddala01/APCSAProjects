@@ -21,7 +21,7 @@ public class StudentRunner {
         System.out.println ("Average score: " + s1.getAverage());
         System.out.println ("Maximum score: " + s1.getMaximum());
 
-        System.out.println ();
+        System.out.println();
 
         System.out.println("Building Student 2");
         Student s2 = new Student (987654);
@@ -37,7 +37,7 @@ public class StudentRunner {
         System.out.println ("Average score: " + s2.getAverage());
         System.out.println ("Maximum score: " + s2.getMaximum());
 
-        System.out.println ();
+        System.out.println();
 
         System.out.println("Building Student 3 (with same ID as Student 1)");
         Student s3 = new Student ("Herman Johnson", 123456, 98.0, 96.0);

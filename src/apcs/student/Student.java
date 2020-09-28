@@ -5,7 +5,7 @@ public class Student {
     private int id = 0;
     private double score1 = -1.0;
     private double score2 = -1.0;
-    private double av1 = -1.0;
+    private double average1 = -1.0;
     private double max = -1.0;
     private double test1 = -1.0;
     private double test2 = -1.0;
@@ -49,23 +49,23 @@ public class Student {
         } else if (test == 2){
             score2 = score;
         } else {
-            System.out.println("You have not taken your test yet");
+            System.out.println("You haven't taken your test yet!");
         }
     }
 
     public double getAverage() {
         if (score1 > 0 && score2 > 0) {
-            av1 = (score1 + score2) / 2;
+            average1 = (score1 + score2) / 2;
         } else if (score1 < 0 || score2 < 0) {
             if (score1 < 0) {
-                av1 = score2;
+                average1 = score2;
             } else if (score2 < 0) {
-                av1 = score1;
+                average1 = score1;
             }
         } else {
-            av1 = -1.0;
+            average1 = -1.0;
         }
-        return av1;
+        return average1;
     }
 
     public double getMaximum() {
