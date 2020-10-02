@@ -5,7 +5,7 @@ public class StudentRunner {
         System.out.println("Building Student 1");
         Student s1 = new Student (123456);
         System.out.println (s1);
-        s1.setName("Sergio Aguilar");
+        s1.setName("Sergio Aguilar ");
         System.out.println (s1);
         System.out.println ("Average score: " + s1.getAverage());
         System.out.println ("Maximum score: " + s1.getMaximum());

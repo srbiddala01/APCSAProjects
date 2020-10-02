@@ -1,4 +1,10 @@
 package apcs.student;
+/**
+ * This class models a single Student and their scores on two tests.
+ *
+ * @author Shriya Biddala
+ *
+ */
 
 public class Student {
     private String name = "";
@@ -10,6 +16,10 @@ public class Student {
     private double test1 = -1.0;
     private double test2 = -1.0;
 
+    /**
+     * Creates a new instance of Student with the specified id number.
+     * @param studentid the student id
+     */
     //constructor1
     public Student(int studentid){
         id = studentid;
@@ -43,8 +53,23 @@ public class Student {
        }
     }
 
+    /**
+     * Updates a test score for a Student.
+     * Preconditions:
+     * - the test number must be 1 or 2
+     * - the score must be 0.0 through 100.0
+     *
+     * @param test The test number to update
+     * @param score The new score
+     */
     public void setScore(int test, double score){
-        if (test == 1){
+        if (test != 1 && test != 2){
+            throw new IllegalArgumentException("The test number must be a 1 or 2.");
+        }
+        if (score < 0.0 || score > 100.0){
+            throw new IllegalArgumentException("Invalid; The score must be in between the range of 0.0 and 100.0.");
+        }
+        if (test == 1) {
             score1 = score;
         } else if (test == 2){
             score2 = score;
@@ -53,6 +78,10 @@ public class Student {
         }
     }
 
+    /**
+     * Calculates and returns the average of any tests taken
+     * @return The average test score of -1.0 if none have been taken yet
+     */
     public double getAverage() {
         if (score1 > 0 && score2 > 0) {
             average1 = (score1 + score2) / 2;
@@ -89,4 +118,6 @@ public class Student {
             return false;
         }
     }
+
+
 }
