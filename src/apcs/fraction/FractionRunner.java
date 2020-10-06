@@ -12,7 +12,7 @@ public class FractionRunner {
             int fraction1denominator = reader.nextInt();
 
             reader = new Scanner(System.in);
-            System.out.print("Enter an operation (enter Add, Subtract, Multiply or Divide)-make sure you capitalize the first letter of the name of the operator: ");
+            System.out.print("Enter an operation (enter Add, Subtract, Multiply or Divide)- make sure you capitalize the first letter of the name of the operator (only the first letter): ");
             String operator = reader.next();
 
             reader = new Scanner(System.in);
