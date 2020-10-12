@@ -6,19 +6,19 @@ import java.awt.*;
 
 public class ZBug extends Bug {
     private int steps;
-    private int sideLength;
+    private int sideLengthOfZ;
     private int segment = 0;
 
 
 
     public ZBug(int length) {
-        sideLength = length;
+        sideLengthOfZ = length;
         steps = 0;
         segment = 0;
     }
 
     public void act() {
-        if (steps < sideLength && canMove()) {
+        if (steps < sideLengthOfZ && canMove()) {
             move();
             steps++;
         } else {

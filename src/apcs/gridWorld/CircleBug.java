@@ -6,16 +6,16 @@ import java.awt.*;
 
 public class CircleBug extends Bug {
     private int steps;
-    private int sideLength;
+    private int sideLengthOfCircle;
 
 
     public CircleBug(int length){
-        sideLength = length;
+        sideLengthOfCircle = length;
         steps = 0;
     }
 
     public void act () {
-        if (steps < sideLength && canMove()){
+        if (steps < sideLengthOfCircle && canMove()){
             move();
             steps++;
         } else {

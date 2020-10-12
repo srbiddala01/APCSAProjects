@@ -6,23 +6,23 @@ import java.awt.*;
 
 public class SpiralBug extends Bug{
     private int steps;
-    private int sideLength;
+    private int sideLengthOfSpiral;
 
 
 
     public SpiralBug(int length){
-        sideLength = length;
+        sideLengthOfSpiral = length;
         steps = 0;
     }
 
     public void act () {
-        if (steps < sideLength && canMove()){
+        if (steps < sideLengthOfSpiral && canMove()){
             move();
             steps++;
         } else {
             turn();
             turn();
-            sideLength = sideLength + 1;
+            sideLengthOfSpiral = sideLengthOfSpiral + 1;
             steps = 0;
         }
     }
