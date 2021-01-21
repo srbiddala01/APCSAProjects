@@ -1,4 +1,5 @@
 package apcs.playList;
+// This is the tester for part 0.
 
 import apcs.playList.PlayList;
 
@@ -10,3 +11,4 @@ public class PlayListTester {
         System.out.println ("max size: " + aList.capacity());
     }
 }
+

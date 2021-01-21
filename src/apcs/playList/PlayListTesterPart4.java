@@ -1,10 +1,10 @@
 package apcs.playList;
+//This is the tester for part 4
 
 import apcs.playList.PlayList;
 
 public class PlayListTesterPart4 {
     public static void main(String args[]) {
-
         java.lang.System.setErr(java.lang.System.out);  // this synchronizes regular output and error messages
 
         System.out.println("Testing Default Constructor");
