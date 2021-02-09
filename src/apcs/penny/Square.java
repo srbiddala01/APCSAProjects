@@ -27,7 +27,7 @@ public class Square {
     }
 
     public String toString(){
-        if (occupied = false){
+        if (occupied == false){
             return "" + score;
         } else {
             return "P";

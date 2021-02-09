@@ -34,7 +34,7 @@ public class Runner {
             boolean isOccupied = board[(int) row][(int) column].isOccupied();
             if (board[(int) row][(int) column].isOccupied() == false){
                 runningTotal += score2;
-                isOccupied = true;
+                board[(int) row][(int) column].setOccupied(true);
             }
 
             for (int r = 0; r < board.length; r++){
