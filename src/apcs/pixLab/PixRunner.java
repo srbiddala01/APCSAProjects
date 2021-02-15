@@ -13,18 +13,46 @@ public class PixRunner {
                 img[r][c] = new Color (r, c, 255 - (r + c)/2);
             }
         }
-        Image a = new Image(img);
+      /*  Image a = new Image(img);
         a.display("Red Image");
         a.display("Red Gradient");
         a.display("Red-Green Gradient: ");
-        a.display("Full Gradient: ");
+        a.display("Full Gradient: "); */
 
-        Image b = new Image("p2p.jpg");
-        b.display("Peak to Peak");
+        Image originalCopy = new Image("p2p.jpg");
+        originalCopy.display("Peak to Peak");
 
-        Image c = b.copy();
-        c.removeBlue();
-        c.display("P2P with no blue");
+        Image noBlue = originalCopy.copy();
+        noBlue.removeBlue();
+        noBlue.display("P2P with no blue");
+
+        Image noGreen = originalCopy.copy();
+        noGreen.removeGreen();
+        noGreen.display("P2P with no green");
+
+        Image noRed = originalCopy.copy();
+        noRed.removeRed();
+        noRed.display("P2P with no red");
+
+        Image blackAndWhite = originalCopy.copy();
+        blackAndWhite.blackWhite();
+        blackAndWhite.display("P2P in black and white");
+
+        Image inverted = originalCopy.copy();
+        inverted.invert();
+        inverted.display("P2P inverted");
+
+        Image flippedHorizontally = originalCopy.copy();
+        flippedHorizontally.flipHorizontal();
+        flippedHorizontally.display("P2P flipped horizontally");
+
+        Image mirrorVertical = originalCopy.copy();
+        mirrorVertical.mirrorVertical();
+        mirrorVertical.display("P2P mirrored vertically");
+
+        Image blur = originalCopy.copy();
+        blur.blurImage();
+        blur.display("P2P blurred");
     }
 }
 
