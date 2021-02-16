@@ -157,10 +157,8 @@ public class Image {
             for (int c = 0; c < image[r].length; c++) {
                 int bottomIndex = image.length - r - 1;
                 int topIndex = r;
-                Color bottomVal = image[bottomIndex][c];
                 Color topVal = image[topIndex][c];
                 image[bottomIndex][c] = topVal;
-                image[topIndex][c] = bottomVal;
             }
         }
     }
