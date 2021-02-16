@@ -57,7 +57,7 @@ public class ImageGUI {
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
             ImageIcon other = new ImageIcon(image);
-            other.paintIcon(this, g, 0, 0); 
+            other.paintIcon(this, g, 0, 0);
         }
     }
 }

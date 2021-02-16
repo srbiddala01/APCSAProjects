@@ -118,10 +118,8 @@ public class Image {
                 int red = pixel.getRed();
                 int green = pixel.getGreen();
                 int blue = pixel.getBlue();
-                   red = (red+green+blue)/3;
-                   green = (red+green+blue)/3;
-                   blue = (red+green+blue)/3;
-                   image[r][c] = new Color(red, green, blue);
+                int average = (red + green + blue) / 3; 
+                   image[r][c] = new Color(average, average, average);
             }
         }
     }

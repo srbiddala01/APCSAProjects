@@ -7,7 +7,7 @@ public class PixRunner {
     public static void main(String[] args) {
         Color[][] img = new Color[256][256];
         for (int r=0; r<img.length; r++) {
-            for (int c=0; c<img[r].length; c++) {
+            for (int c=0; c<img[r].length; c++) { 
                 img[r][c] = new Color (255, 255, 0);
                 img[r][c] = new Color (r, c, 0);
                 img[r][c] = new Color (r, c, 255 - (r + c)/2);
