@@ -2,6 +2,8 @@ package apcs.pixLab;
 
 import java.awt.Color;
 
+// I (Shriya) was the host
+
 public class PixRunner {
 
     public static void main(String[] args) {
