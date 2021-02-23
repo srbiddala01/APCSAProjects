@@ -6,7 +6,7 @@ public class FractalRunner {
     public static void main(String[] args) {
         SketchPadWindow sk = new SketchPadWindow (1000, 1000);
         SlowPen p = new SlowPen (sk);
-        SlowPen.setDelay(10);
+        SlowPen.setDelay(5);
         double length  = 400;
         int degree = 6;
         p.up();
@@ -18,11 +18,11 @@ public class FractalRunner {
 
         SketchPadWindow sk2 = new SketchPadWindow (1000, 1000);
         SlowPen p2 = new SlowPen (sk2);
-        SlowPen.setDelay(10);
+        SlowPen.setDelay(5);
         double length2  = 1000;
         int degree2 = 4;
         p2.up();
-        p2.move(200,0);
+        p2.move(50,0);
         p2.setDirection(90);
         p2.down();
         p2.turn(315);
