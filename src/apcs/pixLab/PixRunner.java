@@ -2,7 +2,7 @@ package apcs.pixLab;
 
 import java.awt.Color;
 
-// I (Shriya) was the host
+// I (Shriya) was the host.
 
 public class PixRunner {
 
